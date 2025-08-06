@@ -8,7 +8,7 @@ Ejecutar `docker load -i .\bully.tar`
 
 Luego `docker run -p 8080:8080 spring-boot-project-1-api`
 
-Ejecutar el archivo `populate_db_bat.bat` para poblar la base de datos
+Ejecutar el archivo `populate_db_bat.bat` (está aquí en el repo) para poblar la base de datos
 
 ---
 #### Rutas de la API
