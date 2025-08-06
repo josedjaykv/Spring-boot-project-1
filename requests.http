@@ -1,0 +1,512 @@
+### ===== LINE'S REVENGE API - POBLADO COMPLETO DE BD =====
+### URL Base
+@baseUrl = http://localhost:8080/revenge-api
+
+### ===== 1. VERIFICAR QUE LA API FUNCIONA =====
+GET {{baseUrl}}/api/bullies
+Accept: application/json
+
+
+
+### ===== 2. CREAR CLIQUES ADICIONALES =====
+
+### Crear Clique: Los Wannabe Influencers
+POST {{baseUrl}}/api/cliques
+Content-Type: application/json
+
+{
+  "name": "Los Wannabe Influencers",
+  "description": "Grupo que se creía famoso por tener 200 seguidores y hacer TikToks cringe"
+}
+
+### Crear Clique: Banda de la Cafetería
+POST {{baseUrl}}/api/cliques
+Content-Type: application/json
+
+{
+  "name": "Banda de la Cafetería",
+  "description": "Los que controlaban las mesas de la cafetería y decidían el orden social del almuerzo"
+}
+
+### Crear Clique: Los Pseudo Intelectuales
+POST {{baseUrl}}/api/cliques
+Content-Type: application/json
+
+{
+  "name": "Los Pseudo Intelectuales",
+  "description": "Se creían superiores por leer un libro al año y usar palabras fancy"
+}
+
+### Crear Clique: Los Nicks
+POST {{baseUrl}}/api/cliques
+Content-Type: application/json
+
+{
+  "name": "Los Nicks",
+  "description": "Grupo de gente que se creen Tony Stark"
+}
+
+### Crear Clique: Los Caballeros
+POST {{baseUrl}}/api/cliques
+Content-Type: application/json
+
+{
+  "name": "Los Caballeros",
+  "description": "Grupo selecto que se creen los más educados y correctos de la Universidad"
+}
+
+### Crear Clique: Los NPCs
+POST {{baseUrl}}/api/cliques
+Content-Type: application/json
+
+{
+  "name": "Los NPCs",
+  "description": "Grupo de personas que siguen las reglas al pie de la letra y no se atreven a salir de su zona de confort"
+}
+
+
+
+### ===== 3. CREAR BULLIES ÉPICOS =====
+
+### Bully 1: El Influencer Fallido
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Sebastián Vargas",
+  "nickname": "Sebas Viral",
+  "highSchoolRole": "OTHER",
+  "cliqueId": 5,
+  "bullyingReason": "Se burlaba de mis dibujos diciendo que eran 'contenido para perdedores' mientras él hacía TikToks bailando mal",
+  "levelOfAnnoyance": 9
+}
+
+### Bully 2: La Reina de la Cafetería
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Isabella Santos",
+  "nickname": "Isa Queen",
+  "highSchoolRole": "GOSSIP",
+  "cliqueId": 6,
+  "bullyingReason": "Me prohibía sentarme en 'su' mesa y organizaba el bullying sistemático durante el almuerzo",
+  "levelOfAnnoyance": 10
+}
+
+### Bully 3: El Pseudo Filósofo
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Andrés Moreno",
+  "nickname": "El Intelectual",
+  "highSchoolRole": "NERD_HATER",
+  "cliqueId": 6,
+  "bullyingReason": "Decía que el anime era 'cultura inferior' y que mis gustos eran 'básicos y sin profundidad intelectual'",
+  "levelOfAnnoyance": 7
+}
+
+### Bully 4: La Deportista Tóxica
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Camila Torres",
+  "nickname": "Cami Fit",
+  "highSchoolRole": "JOCK",
+  "cliqueId": 2,
+  "bullyingReason": "Se burlaba de mi físico en educación física y me decía 'otaku gorda' frente a todos",
+  "levelOfAnnoyance": 8
+}
+
+### Bully 5: El Buchón Premium
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Ricardo Mendoza",
+  "nickname": "Ricky Perfecto",
+  "highSchoolRole": "TEACHER_PET",
+  "cliqueId": 4,
+  "bullyingReason": "Me acusaba falsamente con los profesores y se inventaba que yo copiaba sus tareas perfectas",
+  "levelOfAnnoyance": 6
+}
+
+### Bully 6: El Gamer Tryhard
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Kevin López",
+  "nickname": "Tryhard99",
+  "highSchoolRole": "JOCK",
+  "cliqueId": 1,
+  "bullyingReason": "Decía que yo era un 'NPC sin logros' porque no jugaba LOL ni sabía de builds de Dota",
+  "levelOfAnnoyance": 7
+}
+
+### Bully 7: La Dani Queen
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Daniela Ramírez",
+  "nickname": "La Dani",
+  "highSchoolRole": "GOSSIP",
+  "cliqueId": 6,
+  "bullyingReason": "Subía videos burlándose de mi forma de vestir y se hacían virales en el colegio",
+  "levelOfAnnoyance": 9
+}
+
+### Bully 8: El Santi Cool
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Santiago Pérez",
+  "nickname": "Santi Cool",
+  "highSchoolRole": "JOCK",
+  "cliqueId": 5,
+  "bullyingReason": "Se volvió 'cool' y empezó a hacerme bullying para encajar con su nuevo grupo",
+  "levelOfAnnoyance": 10
+}
+
+### Bully 9: La Teacher's Pet
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Valentina Rojas",
+  "nickname": "Vale Ironía",
+  "highSchoolRole": "TEACHER_PET",
+  "cliqueId": 4,
+  "bullyingReason": "Me lanzaba indirectas pesadas cada vez que respondía mal en clase y todos se reían",
+  "levelOfAnnoyance": 6
+}
+
+### Bully 10: El vegano
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "Andrés Castaño",
+  "nickname": "Vegandrés",
+  "highSchoolRole": "TEACHER_PET",
+  "cliqueId": 3,
+  "bullyingReason": "Me decía asesina porque comía salchipapas en los descansos y me dejaba carteles en la lonchera",
+  "levelOfAnnoyance": 8
+}
+
+### Bully 11: La Majo Dance
+POST {{baseUrl}}/api/bullies
+Content-Type: application/json
+
+{
+  "name": "María José Rivera",
+  "nickname": "Majo Dance",
+  "highSchoolRole": "JOCK",
+  "cliqueId": 2,
+  "bullyingReason": "Me hacía sentir invisible en las coreografías y le decía a todos que se movía más un alkaseltzer en una mazamorra que yo bailando",
+  "levelOfAnnoyance": 9
+}
+
+
+
+### ===== 4. CREAR REVENGE PLANS ÉPICOS =====
+
+### Plan 1: La Caída del Influencer
+POST {{baseUrl}}/api/revenge-plans
+Content-Type: application/json
+
+{
+  "title": "De Viral a Invisible: La Saga de Sebas",
+  "description": "Sebastián ahora tiene 47 seguidores y vende productos de limpieza por catálogo. Su último TikTok tiene 3 views (todas mías para reírme). Plan incluye compilación de sus videos cringe vs su realidad actual.",
+  "bullyId": 1,
+  "datePlanned": "2024-12-01"
+}
+
+### Plan 2: La Ex-Reina sin Reino
+POST {{baseUrl}}/api/revenge-plans
+Content-Type: application/json
+
+{
+  "title": "Isabella: De Queen a Karen Desempleada",
+  "description": "La ex-reina de la cafetería ahora hace drama en grupos de Facebook de madres y trabaja en un call center. The throne has fallen and she's taking complaints about cable service.",
+  "bullyId": 2,
+  "datePlanned": "2024-11-25"
+}
+
+### Plan 3: El Filósofo de Walmart
+POST {{baseUrl}}/api/revenge-plans
+Content-Type: application/json
+
+{
+  "title": "Andrés: De Intelectual a Empleado del Mes",
+  "description": "El pseudo-intelectual terminó empacando en Walmart. Irónicamente, ahora yo soy la que tiene carrera exitosa mientras él pregunta '¿bolsa o sin bolsa?'. Time for some philosophical revenge.",
+  "bullyId": 3,
+  "datePlanned": "2024-12-10"
+}
+
+### Plan 4: La Deportista que Ya No Corre
+POST {{baseUrl}}/api/revenge-plans
+Content-Type: application/json
+
+{
+  "title": "Camila's Fitness Reality Check",
+  "description": "Cami the 'fit queen' ahora vende batidos detox en Instagram con 0 engagement. Meanwhile, I'm out here being a successful entrepreneur. The glow up comparison is ICONIC.",
+  "bullyId": 4,
+  "datePlanned": "2024-12-20"
+}
+
+### Plan 5: El Buchón Bochinchero
+POST {{baseUrl}}/api/revenge-plans
+Content-Type: application/json
+
+{
+  "title": "Ricardo: Del Teacher's Pet al Unemployed Disaster",
+  "description": "Ricky 'el perfecto' ha cambiado de trabajo 8 veces en 2 años. Sus referencias perfectas no lo salvaron de ser un disaster employee. Time to document this beautiful karma.",
+  "bullyId": 5,
+  "datePlanned": "2025-01-05"
+}
+
+
+
+### ===== 5. EJECUTAR ALGUNOS REVENGE PLANS =====
+
+### Ejecutar Plan de Sebastián como ICONIC
+PATCH {{baseUrl}}/api/revenge-plans/2/execute?successLevel=ICONIC
+
+### Ejecutar Plan de Isabella como MILDLY_FUNNY
+PATCH {{baseUrl}}/api/revenge-plans/3/execute?successLevel=MILDLY_FUNNY
+
+### ===== 6. SUBIR MEDIA ÉPICO =====
+
+### Media 1: Meme de Sebastián
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 2,
+  "type": "MEME",
+  "url": "https://imgur.com/sebas-influencer-fail",
+  "caption": "POV: You peaked at 200 TikTok followers and now you're selling Tupperware to your 3 remaining followers 💀📱"
+}
+
+### Media 2: Video Compilation Isabella
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 1,
+  "type": "VIDEO",
+  "url": "https://tiktok.com/line/isabella-karen-transformation",
+  "caption": "From cafeteria queen to 'Can I speak to your manager?' - The pipeline is REAL ✨👑➡️😤"
+}
+
+### Media 3: Photo Before/After Sebastián
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 1,
+  "type": "PHOTO",
+  "url": "https://instagram.com/line/sebas-reality-check",
+  "caption": "Then: 'I'm gonna be the next MrBeast' | Now: 'Have you considered our premium cleaning products?' The character development! 📸"
+}
+
+### Media 4: Drawing Artístico de Andrés
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 3,
+  "type": "DRAWING",
+  "url": "https://deviantart.com/line/andres-walmart-philosopher",
+  "caption": "Fan art of Andrés contemplating the existential crisis of 'paper or plastic?' - Truly deep philosophical work 🎨🛒"
+}
+
+### Media 5: Meme de Camila
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 4,
+  "type": "MEME",
+  "url": "https://imgur.com/camila-fitness-fake",
+  "caption": "Her: 'You'll never be fit' | Also her: Selling fake detox shakes with 0 likes. The irony is IMMACULATE 💪➡️🤡"
+}
+
+### Media 6: Video de Ricardo
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 5,
+  "type": "VIDEO",
+  "url": "https://tiktok.com/line/ricardo-job-hopping",
+  "caption": "8 jobs in 2 years compilation! From 'perfect student' to 'sir, this is a Wendy's' - The ultimate plot twist 🎬"
+}
+
+### ===== 7. MOOD TRACKER DOCUMENTATION =====
+
+### Mood 1: Día de Victoria Sebastián
+POST {{baseUrl}}/api/mood-tracker
+Content-Type: application/json
+
+{
+  "date": "2024-12-01",
+  "moodLevel": 10,
+  "note": "¡EL PLAN DE SEBASTIÁN FUE ÉPICO! Su video de mi venganza tiene 500K views y él solo tiene 47 seguidores. The SATISFACTION is unmatched! I'm literally glowing ✨👑"
+}
+
+### Mood 2: Research Day Isabella
+POST {{baseUrl}}/api/mood-tracker
+Content-Type: application/json
+
+{
+  "date": "2024-11-25",
+  "moodLevel": 9,
+  "note": "Found Isabella's LinkedIn where she lists 'Customer Experience Specialist' (aka call center). Meanwhile I'm here being a successful entrepreneur. The tables have TURNED! 📞➡️👑"
+}
+
+### Mood 3: Andrés Investigation
+POST {{baseUrl}}/api/mood-tracker
+Content-Type: application/json
+
+{
+  "date": "2024-11-20",
+  "moodLevel": 8,
+  "note": "Spotted Andrés at Walmart in his uniform. The 'intellectual superior' is now asking if I want my receipt. The philosophical irony is CHEF'S KISS! 🛒📜"
+}
+
+### Mood 4: Camila Reality Check
+POST {{baseUrl}}/api/mood-tracker
+Content-Type: application/json
+
+{
+  "date": "2024-11-18",
+  "moodLevel": 7,
+  "note": "Camila's 'fitness empire' Instagram has 200 followers and her last post got 3 likes. The girl who called me 'otaku gorda' can't even sell her fake shakes. Justice is SWEET 🍰"
+}
+
+### Mood 5: Ricardo Karma
+POST {{baseUrl}}/api/mood-tracker
+Content-Type: application/json
+
+{
+  "date": "2024-11-15",
+  "moodLevel": 9,
+  "note": "LinkedIn says Ricardo changed jobs AGAIN (job #9 this year). The 'perfect student' can't keep a job for more than 2 months. My career is thriving while his is... not. Karma at its finest! 💼✨"
+}
+
+### Mood 6: Reflexión General
+POST {{baseUrl}}/api/mood-tracker
+Content-Type: application/json
+
+{
+  "date": "2024-11-22",
+  "moodLevel": 10,
+  "note": "Looking back at all my bullies and their current situations... I've literally become everything they said I couldn't be. Model, entrepreneur, content creator, and most importantly - HAPPY. The glow up is COMPLETE! 🌟👑"
+}
+
+### ===== 8. MÁS MEDIA PARA COMPLETAR EL ARCHIVO =====
+
+### Media Extra 1: Drawing de Isabella
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 2,
+  "type": "DRAWING",
+  "url": "https://deviantart.com/line/isabella-karen-evolution",
+  "caption": "Evolution chart: High school queen ➡️ Facebook Karen ➡️ Call center employee. Natural selection at work! 🧬👑➡️📞"
+}
+
+### Media Extra 2: Meme filosófico Andrés
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 3,
+  "type": "MEME",
+  "url": "https://imgur.com/andres-philosophy-walmart",
+  "caption": "'The unexamined life is not worth living' - Socrates | 'Paper or plastic?' - Andrés 2024. The intellectual journey! 🧠➡️🛒"
+}
+
+### Media Extra 3: Photo Camila fitness fail
+POST {{baseUrl}}/api/media
+Content-Type: application/json
+
+{
+  "revengePlanId": 4,
+  "type": "PHOTO",
+  "url": "https://instagram.com/line/camila-detox-fail",
+  "caption": "Selling detox shakes while looking like she needs to detox from her own drama. The business model is questionable at best 📸💊"
+}
+
+### ===== 10. VERIFICAR TODO EL IMPERIO =====
+
+### Ver Dashboard Completo
+GET {{baseUrl}}/api/line/dashboard
+Accept: application/json
+
+### Ver todos los Bullies creados
+GET {{baseUrl}}/api/bullies
+Accept: application/json
+
+### Ver todos los Revenge Plans
+GET {{baseUrl}}/api/revenge-plans
+Accept: application/json
+
+### Ver todas las Cliques
+GET {{baseUrl}}/api/cliques
+Accept: application/json
+
+### Ver todo el Media
+GET {{baseUrl}}/api/media
+Accept: application/json
+
+### Ver Mood Tracker completo
+GET {{baseUrl}}/api/mood-tracker
+Accept: application/json
+
+### Ver Stats Dashboard
+GET {{baseUrl}}/api/stats/dashboard
+Accept: application/json
+
+### ===== 11. ENDPOINTS ESPECÍFICOS PARA VERIFICAR RELACIONES =====
+
+### Ver Bullies de una Clique específica (Wannabe Influencers)
+GET {{baseUrl}}/api/bullies/clique/5
+Accept: application/json
+
+### Ver Revenge Plans de un Bully específico (Sebastián)
+GET {{baseUrl}}/api/revenge-plans/bully/6
+Accept: application/json
+
+### Ver Media de un Revenge Plan específico
+GET {{baseUrl}}/api/media/revenge-plan/6
+Accept: application/json
+
+### Ver Revenge Plans Ejecutados
+GET {{baseUrl}}/api/revenge-plans/executed
+Accept: application/json
+
+### Ver Revenge Plans Pendientes
+GET {{baseUrl}}/api/revenge-plans/pending
+Accept: application/json
+
+### ===== 12. ANÁLISIS FINAL DE LINE =====
+
+### Target Analysis
+GET {{baseUrl}}/api/line/target-analysis?minAnnoyanceLevel=8
+Accept: application/json
+
+### Revenge Summary
+GET {{baseUrl}}/api/stats/revenge-summary
+Accept: application/json
+
+### ===== FIN DEL POBLADO ÉPICO =====
+### 🎉 Line's Revenge Empire está completo y operacional!
+### 👑 Justice served at 60fps with motion blur! ✨
