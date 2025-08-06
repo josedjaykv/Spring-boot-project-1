@@ -1,6 +1,9 @@
 # Line's Revenge
 
 #### Importar imagen de docker
+
+Descargar el [bully.tar](https://drive.google.com/file/d/146T__SSXACcCmtFqwfqqBWQ8pzFDgxzB/view?usp=sharing)
+
 Ejecutar `docker load -i .\bully.tar`
 
 Luego `docker run -p 8080:8080 spring-boot-project-1-api`
