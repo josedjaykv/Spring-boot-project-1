@@ -23,6 +23,19 @@ Luego `docker run -p 8080:8080 spring-boot-project-1-api`
 
 **Hay más rutas en el archivo requests.http**
 
+---
+#### Front
+[Front en S3](https://implementacion-jdjv.s3.us-east-2.amazonaws.com/index.html)
+
+---
+#### Base de datos h2
+[/h2-console/](http://localhost:8080/revenge-api/h2-console/) Si se corre el proyecto de manera local.
+
+Configuración:
+- url: jdbc:h2:mem:revenge_db
+- driverClassName: org.h2.Driver
+- username: line
+- password: glowup2025
 
 
 
