@@ -26,7 +26,7 @@ Ejecutar el archivo [populate_db_bat.bat](populate_db_bat.bat) para poblar la ba
 - Ver Bullies de una Clique específica (clique id=5): [/bullies/clique/5](http://localhost:8080/revenge-api/api/bullies/clique/5)
 - Ver Revenge Plans de un Bully específico: [/revenge-plans/bully/5](http://localhost:8080/revenge-api/api/revenge-plans/bully/5)
 
-**Hay más rutas en el archivo requests.http**
+Hay más rutas en el archivo [requests.http](requests.http) (también tiene los POST para poblar la base de datos)
 
 ---
 #### Front
