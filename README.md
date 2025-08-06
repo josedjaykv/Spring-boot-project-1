@@ -6,7 +6,10 @@ Ejecutar `docker load -i .\bully.tar`
 
 Luego `docker run -p 8080:8080 spring-boot-project-1-api`
 
+
 #### Rutas de la API
+---
+
 URL base: `http://localhost:8080/revenge-api/api`
 
 Pagina principal (dashboard): [/line/dashboard](http://localhost:8080/revenge-api/api/line/dashboard)
@@ -23,7 +26,10 @@ Media: [/media](http://localhost:8080/revenge-api/api/media)
 
 Mood tracker: [/mood-tracker](http://localhost:8080/revenge-api/api/mood-tracker)
 
+
 #### Rutas específicas
+
+---
 
 Ver Bullies de una Clique específica (clique id=5): [/bullies/clique/5](http://localhost:8080/revenge-api/api/bullies/clique/5)
 
