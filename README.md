@@ -19,7 +19,7 @@ Luego `docker run -p 8080:8080 spring-boot-project-1-api`
 ---
 #### Rutas específicas
 - Ver Bullies de una Clique específica (clique id=5): [/bullies/clique/5](http://localhost:8080/revenge-api/api/bullies/clique/5)
-- Ver Revenge Plans de un Bully específico: [/revenge-plans/bully/6](http://localhost:8080/revenge-api/api/revenge-plans/bully/6)
+- Ver Revenge Plans de un Bully específico: [/revenge-plans/bully/5](http://localhost:8080/revenge-api/api/revenge-plans/bully/5)
 
 **Hay más rutas en el archivo requests.http**
 
