@@ -1,3 +1,5 @@
+# Diego Collazos Bermúdez y José David Jayk Vanegas
+
 # Line's Revenge
 
 #### Importar imagen de docker
